@@ -14,8 +14,6 @@ This library will gather several state-of-the-art techniques. We will present th
 - [Implemented Models](#Models)
 - [Getting started](#Getting-started)
   - [Preparing your data](#Preparing-your-data)
-    - [Manual](#Manual)
-    - [With converters](#With-converters)
   - [Downloading pre-trained models](#Downloading-pre-trained-models)
   - [Training models](#Training-models)
   - [Making predictions](#Making-predictions)
@@ -79,12 +77,56 @@ The model performance on the test dataset we provide (`Datasets` folder) is the 
 
 ### Preparing your data
 
-We offer a text pre-processing pipeline as well as data augmentation techniques.
-
-#### Manual
-
-To use `fstc` you need to create a Pandas DataFrame with the following columns:
+We offer a text pre-processing pipeline as well as data augmentation techniques. To use `fstc` you need to create a Pandas DataFrame with the following columns:
 
 | Text              | Label               |
 | ----------------- | --------------------|
 | First short text  | Label of first text |
+
+### Training models
+
+Fit the cosine classifier on your annotated texts:
+
+```python
+from ftsc.cosine_classifier import *
+
+clf = cosine_classifier()
+clf.fit(X_train, y_train)
+```
+
+We include an automated label encoding of `y_train` which can therefore take any form.
+
+### Making predictions
+
+To get the prediction on the rest of your un-labeled texts:
+
+```python
+clf.predict(X_test)
+```
+
+## Notebook Examples
+
+We prepared some notebook examples under the [examples](examples) directory.
+
+You can also play directly with these notebook examples using [Binder](https://gke.mybinder.org/) or [Google Colaboratory](https://colab.research.google.com/notebooks/welcome.ipynb):
+
+| Notebook | Description |
+| --- | --- |
+| [1] FewShot | A simple demonstration of fsTC pre-trained WordEmbeddings classifers |
+| [2] DLFewShot | Extension leveraging Deep-Learning approaches |
+
+## Contributing
+
+Read our [Contributing Guidelines](.github/CONTRIBUTING.md).
+
+## References
+
+| Type                 | Title                                                                                                                                        | Author                                                                                 | Year |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | ---- |
+| :newspaper: Paper    | [One-shot and few-shot learning of word embeddings
+](https://arxiv.org/abs/1710.10280)                                                        | Andrew K. Lampinen & James L. McClelland                                   | 2018 |
+
+## LICENSE
+
+[Apache-2.0](LICENSE)
+
