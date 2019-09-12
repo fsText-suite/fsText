@@ -129,3 +129,13 @@ Read our [Contributing Guidelines](.github/CONTRIBUTING.md).
 
 [Apache-2.0](LICENSE)
 
+## Contacts and contributors
+
+<table><tr><td align="center">
+	<td align="center">
+    <a href="https://github.com/maelfabien"><img src="https://avatars0.githubusercontent.com/u/24256555?v=4" width="100px;" alt="mfix22"/>
+	  <br /><sub><b>maelfabien</b></sub>
+	  </a><br /><a href="https://github.com/maelfabien/fsTC/commits?author=maelfabien" title="Code">💻      </a></td>
+	</td>
+
+</tr></table>
