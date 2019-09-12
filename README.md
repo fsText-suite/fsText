@@ -14,4 +14,10 @@ This simple approach relies on :
 - computing the mean embedding of each class using a pre-trained word embedding (Word2Vec)
 - for a new example, find the closest class using the cosine distance
 
+We can illustrate it the following way :
+
 ![images](Images/nlp_fs_4.png)
+
+The model performance on the test dataset we provide (`Datasets` folder) is the following:
+
+![images](Images/perf_1.png)
