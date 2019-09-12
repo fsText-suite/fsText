@@ -123,8 +123,7 @@ Read our [Contributing Guidelines](.github/CONTRIBUTING.md).
 
 | Type                 | Title                                                                                                                                        | Author                                                                                 | Year |
 | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | ---- |
-| :newspaper: Paper    | [One-shot and few-shot learning of word embeddings
-](https://arxiv.org/abs/1710.10280)                                                        | Andrew K. Lampinen & James L. McClelland                                   | 2018 |
+| :newspaper: Paper    | [One-shot and few-shot learning of word embeddings](https://arxiv.org/abs/1710.10280)                 | Andrew K. Lampinen & James L. McClelland                                   | 2018 |
 
 ## LICENSE
 
