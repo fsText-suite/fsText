@@ -6,4 +6,12 @@
 
 This library will gather several state-of-the-art techniques. We will present the concepts behind each algorithm and its implementation in the section below.
 
+## Pre-trained WordEmbedding and Cosine Similarity
 
+Implementation of [Few-Shot Text Classification with Pre-Trained Word Embeddings and a Human in the Loop](https://arxiv.org/pdf/1804.02063.pdf) by Katherine Bailey and Sunny Chopra Acquia.
+
+This simple approach relies on :
+- computing the mean embedding of each class using a pre-trained word embedding (Word2Vec)
+- for a new example, find the closest class using the cosine distance
+
+![images](Images/nlp_fs_4.png)
