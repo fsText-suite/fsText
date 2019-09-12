@@ -21,3 +21,17 @@ We can illustrate it the following way :
 The model performance on the test dataset we provide (`Datasets` folder) is the following:
 
 ![images](Images/perf_1.png)
+
+## Pre-trained WordEmbedding and Classifier
+
+Extension of [Few-Shot Text Classification with Pre-Trained Word Embeddings and a Human in the Loop](https://arxiv.org/pdf/1804.02063.pdf) by Katherine Bailey and Sunny Chopra Acquia.
+
+This approach relies on :
+- apply data augmentation (replace, delete, insert, swap words)
+- computing the different embeddings for each class using a pre-trained word embedding (Word2Vec)
+- fit a classifier (K-NN, Random Forest) on the training samples
+- for a new example, use the trained classifier
+
+The model performance on the test dataset we provide (`Datasets` folder) is the following:
+
+![images](Images/perf_2.png)
