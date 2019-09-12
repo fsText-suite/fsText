@@ -6,7 +6,46 @@
 
 This library will gather several state-of-the-art techniques. We will present the concepts behind each algorithm and its implementation in the section below.
 
-## Pre-trained WordEmbedding and Cosine Similarity
+## Table of Contents <!-- omit in toc -->
+
+- [Installation](#Installation)
+  - [With pip](#With-pip)
+  - [From source](#From-source)
+- [Implemented Models](#Models)
+- [Getting started](#Getting-started)
+  - [Preparing your data](#Preparing-your-data)
+    - [Manual](#Manual)
+    - [With converters](#With-converters)
+  - [Downloading pre-trained models](#Downloading-pre-trained-models)
+  - [Training models](#Training-models)
+  - [Making predictions](#Making-predictions)
+  - [Evaluating models](#Evaluating-models)
+- [Notebook Examples](#Notebook-Examples)
+- [Contributing](#Contributing)
+- [References](#References)
+- [LICENSE](#LICENSE)
+
+## Installation
+
+### With pip
+
+(To come)
+
+```shell
+pip install fstc
+```
+
+### From source
+
+```shell
+git clone https://github.com/fstc-suite/ftsc.git
+cd cdQA
+pip install -e .
+```
+
+## Implemented Models
+
+### Pre-trained WordEmbedding and Cosine Similarity
 
 Implementation of [Few-Shot Text Classification with Pre-Trained Word Embeddings and a Human in the Loop](https://arxiv.org/pdf/1804.02063.pdf) by Katherine Bailey and Sunny Chopra Acquia.
 
@@ -22,7 +61,7 @@ The model performance on the test dataset we provide (`Datasets` folder) is the 
 
 ![images](Images/perf_1.png)
 
-## Pre-trained WordEmbedding and Classifier
+### Pre-trained WordEmbedding and Classifier
 
 Extension of [Few-Shot Text Classification with Pre-Trained Word Embeddings and a Human in the Loop](https://arxiv.org/pdf/1804.02063.pdf) by Katherine Bailey and Sunny Chopra Acquia.
 
@@ -35,3 +74,17 @@ This approach relies on :
 The model performance on the test dataset we provide (`Datasets` folder) is the following:
 
 ![images](Images/perf_2.png)
+
+## Getting started
+
+### Preparing your data
+
+We offer a text pre-processing pipeline as well as data augmentation techniques.
+
+#### Manual
+
+To use `fstc` you need to create a Pandas DataFrame with the following columns:
+
+| Text              | Label               |
+| ----------------- | --------------------|
+| First short text  | Label of first text |
