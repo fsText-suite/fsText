@@ -132,22 +132,19 @@ Read our [Contributing Guidelines](.github/CONTRIBUTING.md).
 ## Contacts and contributors
 
 <table><tr><td align="center">
-	<td align="center">
-    <a href="https://github.com/maelfabien"><img src="https://avatars0.githubusercontent.com/u/24256555?v=4" width="100px;" alt="mfix22"/>
-	  <br /><sub><b>maelfabien</b></sub>
-	  </a><br /><a href="https://github.com/maelfabien/fsTC/commits?author=maelfabien" title="Code">💻      </a></td>
-	</td>
-
-	<td align="center">
-    <a href="https://github.com/andrelmfarias"><img src="https://avatars0.githubusercontent.com/u/24256555?v=4" width="100px;" alt="mfix22"/>
-	  <br /><sub><b>andrelmfarias</b></sub>
-	  </a><br /><a href="https://github.com/maelfabien/fsTC/commits?author=andrelmfarias" title="Code">💻      </a></td>
-	</td>
-
-	<td align="center">
-    <a href="https://github.com/mamrouch"><img src="https://avatars0.githubusercontent.com/u/24256555?v=4" width="100px;" alt="mfix22"/>
-	  <br /><sub><b>mamrouch</b></sub>
-	  </a><br /><a href="https://github.com/maelfabien/fsTC/commits?author=mamrouch" title="Code">💻      </a></td>
-	</td>
-
+<td align="center">
+<a href="https://github.com/maelfabien"><img src="https://avatars0.githubusercontent.com/u/24256555?v=4" width="100px;" alt="mfix22"/>
+<br /><sub><b>maelfabien</b></sub>
+</a><br /><a href="https://github.com/maelfabien/fsTC/commits?author=maelfabien" title="Code">💻      </a></td>
+</td>
+<td align="center">
+<a href="https://github.com/andrelmfarias"><img src="https://avatars0.githubusercontent.com/u/24256555?v=4" width="100px;" alt="mfix22"/>
+<br /><sub><b>andrelmfarias</b></sub>
+</a><br /><a href="https://github.com/maelfabien/fsTC/commits?author=andrelmfarias" title="Code">💻      </a></td>
+</td>
+<td align="center">
+<a href="https://github.com/mamrouch"><img src="https://avatars0.githubusercontent.com/u/24256555?v=4" width="100px;" alt="mfix22"/>
+<br /><sub><b>mamrouch</b></sub>
+</a><br /><a href="https://github.com/maelfabien/fsTC/commits?author=mamrouch" title="Code">💻      </a></td>
+</td>
 </tr></table>
