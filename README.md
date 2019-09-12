@@ -1,4 +1,4 @@
-# Few Shot Text Classification
+# fsTC : Few-Shot Text Classification
 
 <img alt="GitHub contributors" src="https://img.shields.io/github/contributors-anon/maelfabien/FewShotTextClassification.svg"> <img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/3.svg">
 
@@ -30,13 +30,13 @@ This library will gather several state-of-the-art techniques. We will present th
 (To come)
 
 ```shell
-pip install fstc
+pip install fsTC
 ```
 
 ### From source
 
 ```shell
-git clone https://github.com/fstc-suite/ftsc.git
+git clone https://github.com/fsTC-suite/fsTC.git
 cd cdQA
 pip install -e .
 ```
@@ -88,7 +88,7 @@ We offer a text pre-processing pipeline as well as data augmentation techniques.
 Fit the cosine classifier on your annotated texts:
 
 ```python
-from ftsc.cosine_classifier import *
+from fsTC.cosine_classifier import *
 
 clf = cosine_classifier()
 clf.fit(X_train, y_train)
