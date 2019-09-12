@@ -22,6 +22,7 @@ This library will gather several state-of-the-art techniques. We will present th
 - [Contributing](#Contributing)
 - [References](#References)
 - [LICENSE](#LICENSE)
+- [Contacts and Contributors](#LICENSE)
 
 ## Installation
 
