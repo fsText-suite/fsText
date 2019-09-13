@@ -1,4 +1,10 @@
 from distutils.core import setup
+
+from os import path
+this_directory = path.abspath(path.dirname(__file__))
+with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
+
 setup(
       name = 'fsText',         # How you named your package folder (MyLib)
       packages = ['fsText'],   # Chose the same as "name"
@@ -8,6 +14,8 @@ setup(
       author = 'André, Matyas, Maël',                   # Type in your name
       author_email = 'mael.fabien@gmail.com',      # Type in your E-Mail
       url = 'https://github.com/maelfabien/fsText',   # Provide either the link to your github or to your website
+      long_description=long_description,
+      long_description_content_type='text/markdown'
       download_url = 'https://github.com/maelfabien/fsText/archive/v_02.tar.gz',    # I explain this later on
       keywords = ['Few', 'Shot', 'Text', 'Classification'],   # Keywords that define your package best
       install_requires=[
