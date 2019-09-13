@@ -95,8 +95,6 @@ accuracy_score(clf.predict(X_test), y_test)
 
 We prepared some notebook examples under the [examples](examples) directory.
 
-You can also play directly with these notebook examples using [Binder](https://gke.mybinder.org/) or [Google Colaboratory](https://colab.research.google.com/notebooks/welcome.ipynb):
-
 | Notebook | Description |
 | --- | --- |
 | [1] CosineClassifierDemo | A simple demonstration of fsText Cosine Classifier + Word2Vec |
