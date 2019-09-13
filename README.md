@@ -68,9 +68,9 @@ We offer a text pre-processing pipeline as well as data augmentation techniques.
 Fit the cosine classifier on your annotated texts:
 
 ```python
-from fsText.cosine_classifier import *
+from fsText.CosineClassifier import *
 
-clf = cosine_classifier()
+clf = CosineClassifier()
 clf.fit(X_train, y_train)
 ```
 
@@ -82,6 +82,13 @@ To get the prediction on the rest of your un-labeled texts:
 
 ```python
 clf.predict(X_test)
+```
+
+To assess the accuracy of the prediction in case you have a labeled dataset:
+
+```python
+from sklearn.metrics import accuracy_score
+accuracy_score(clf.predict(X_test), y_test)
 ```
 
 ## Notebook Examples
