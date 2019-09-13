@@ -6,6 +6,7 @@ from scipy import spatial
 from sklearn import preprocessing
 import re
 
+
 class CosineClassifier():
 
     def __init__(self):
