@@ -1,5 +1,5 @@
-gensim==3.6.0
-scipy==1.1.0
-numpy==1.15.4
-pandas==0.23.0
-scikit_learn==0.21.3
+gensim
+scipy
+numpy
+pandas
+scikit_learn
