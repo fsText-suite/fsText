@@ -11,11 +11,11 @@ setup(
       download_url = 'https://github.com/maelfabien/fsText/archive/v_01.tar.gz',    # I explain this later on
       keywords = ['Few', 'Shot', 'Text', 'Classification'],   # Keywords that define your package best
       install_requires=[
-                        'gensim==3.6.0',
-                        'scipy==1.1.0',
-                        'numpy==1.15.4',
-                        'pandas==0.23.0',
-                        'scikit_learn==0.21.3'
+                        'gensim',
+                        'scipy',
+                        'numpy',
+                        'pandas',
+                        'scikit_learn'
                         ],
       classifiers=[
                    'Development Status :: 3 - Alpha',      # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
