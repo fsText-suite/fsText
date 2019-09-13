@@ -68,7 +68,7 @@ We offer a text pre-processing pipeline as well as data augmentation techniques.
 Fit the cosine classifier on your annotated texts:
 
 ```python
-from fsText.CosineClassifier import *
+from fsText.Classifier import CosineClassifier
 
 clf = CosineClassifier()
 clf.fit(X_train, y_train)
