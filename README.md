@@ -28,8 +28,6 @@ This library will gather several state-of-the-art techniques. We will present th
 
 ### With pip
 
-(To come)
-
 ```shell
 pip install fsText
 ```
@@ -37,7 +35,7 @@ pip install fsText
 ### From source
 
 ```shell
-git clone https://github.com/fsTC-suite/fsText.git
+git clone https://github.com/maelfabien/fsText.git
 cd fsText
 pip install -e .
 ```
