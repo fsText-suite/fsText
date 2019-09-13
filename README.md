@@ -128,4 +128,3 @@ Read our [Contributing Guidelines](.github/CONTRIBUTING.md).
 </a><br /><a href="https://github.com/maelfabien/fsTC/commits?author=maelfabien" title="Code">💻      </a></td>
 </td>
 </tr></table>
->>>>>>> 9b321b3323548ac006e449635c755c97b1cbe95c
