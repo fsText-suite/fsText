@@ -16,11 +16,11 @@ This simple approach relies on :
 
 We can illustrate it the following way :
 
-![images](Images/nlp_fs_4.png)
+![images](resources/images/nlp_fs_4.png)
 
 The model performance on the test dataset we provide (`Datasets` folder) is the following:
 
-![images](Images/perf_1.png)
+![images](resources/images/perf_1.png)
 
 ## Pre-trained WordEmbedding and Classifier
 
@@ -34,4 +34,4 @@ This approach relies on :
 
 The model performance on the test dataset we provide (`Datasets` folder) is the following:
 
-![images](Images/perf_2.png)
+![images](resources/images/perf_2.png)
