@@ -6,10 +6,11 @@ from scipy import spatial
 from sklearn import preprocessing
 import re
 
-class cosine_classifier():
+class CosineClassifier():
 
     def __init__(self):
 
+        print("Loading pre-trained Word2Vec model...")
         self.model = api.load("word2vec-google-news-300")
         self.le = preprocessing.LabelEncoder()
 
