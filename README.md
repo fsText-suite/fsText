@@ -44,6 +44,15 @@ pip install -e .
 
 ## Implemented Models
 
+
+| Model              | Status               | Details |
+| ----------------- | --------------------| --------------------|
+| Word2Vec + Cosine Similarity  | ✅ | [Article](https://maelfabien.github.io/machinelearning/NLP_5/) |
+| Word2Vec + Advanced Classifiers  | 🚧 | [Article](https://maelfabien.github.io/machinelearning/NLP_6/) |
+| DistilBert + Advanced Classifier  | 🚧 | [Article](https://maelfabien.github.io/machinelearning/NLP_7/) |
+| Siamese Network  | ❌ | [Article](https://data4thought.com/fewshot_learning_nlp.html) |
+
+
 ### Pre-trained WordEmbedding and Cosine Similarity
 
 Implementation of [Few-Shot Text Classification with Pre-Trained Word Embeddings and a Human in the Loop](https://arxiv.org/pdf/1804.02063.pdf) by Katherine Bailey and Sunny Chopra Acquia.
