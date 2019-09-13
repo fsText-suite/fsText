@@ -1,4 +1,4 @@
-# fsTC : Few-Shot Text Classification
+# fsText : Few-Shot Text Classification
 
 <img alt="GitHub contributors" src="https://img.shields.io/github/contributors-anon/maelfabien/FewShotTextClassification.svg"> <img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/3.svg">
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](.github/CODE_OF_CONDUCT.md)
@@ -31,14 +31,14 @@ This library will gather several state-of-the-art techniques. We will present th
 (To come)
 
 ```shell
-pip install fsTC
+pip install fsText
 ```
 
 ### From source
 
 ```shell
-git clone https://github.com/fsTC-suite/fsTC.git
-cd cdQA
+git clone https://github.com/fsTC-suite/fsText.git
+cd fsText
 pip install -e .
 ```
 
@@ -56,7 +56,7 @@ We can illustrate it the following way :
 
 ![images](Images/nlp_fs_4.png)
 
-The model performance on the test dataset we provide (`Datasets` folder) is the following:
+The model performance on the test dataset we provide (`datasets` folder) is the following:
 
 ![images](Images/perf_1.png)
 
@@ -70,7 +70,7 @@ This approach relies on :
 - fit a classifier (K-NN, Random Forest) on the training samples
 - for a new example, use the trained classifier
 
-The model performance on the test dataset we provide (`Datasets` folder) is the following:
+The model performance on the test dataset we provide (`ddatasets` folder) is the following:
 
 ![images](Images/perf_2.png)
 
@@ -78,7 +78,7 @@ The model performance on the test dataset we provide (`Datasets` folder) is the 
 
 ### Preparing your data
 
-We offer a text pre-processing pipeline as well as data augmentation techniques. To use `fstc` you need to create a Pandas DataFrame with the following columns:
+We offer a text pre-processing pipeline as well as data augmentation techniques. To use `fsText` you need to create a Pandas DataFrame with the following columns:
 
 | Text              | Label               |
 | ----------------- | --------------------|
@@ -89,7 +89,7 @@ We offer a text pre-processing pipeline as well as data augmentation techniques.
 Fit the cosine classifier on your annotated texts:
 
 ```python
-from fsTC.cosine_classifier import *
+from fsText.cosine_classifier import *
 
 clf = cosine_classifier()
 clf.fit(X_train, y_train)
