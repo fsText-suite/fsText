@@ -112,7 +112,7 @@ Read our [Contributing Guidelines](.github/CONTRIBUTING.md).
 | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | ---- |
 | :newspaper: Paper    | [One-shot and few-shot learning of word embeddings](https://arxiv.org/abs/1710.10280)                 | Andrew K. Lampinen & James L. McClelland                                   | 2018 |
 | :newspaper: Paper    | [Few-Shot Text Classification with Pre-Trained Word Embeddings and a Human in the Loop](https://arxiv.org/abs/1804.02063)                | Katherine Bailey, Sunny Chopra                                  | 2018 |
-| :newspaper: Paper    | [[Improving Few-shot Text Classification via Pretrained Language Representations](https://arxiv.org/abs/1908.08788)                | Ningyu Zhang, Zhanlin Sun, Shumin Deng, Jiaoyan Chen, Huajun Chen                                   | 2019 |
+| :newspaper: Paper    | [Improving Few-shot Text Classification via Pretrained Language Representations](https://arxiv.org/abs/1908.08788)                | Ningyu Zhang, Zhanlin Sun, Shumin Deng, Jiaoyan Chen, Huajun Chen                                   | 2019 |
 
 ## LICENSE
 
