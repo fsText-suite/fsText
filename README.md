@@ -53,36 +53,6 @@ pip install -e .
 | Siamese Network | ❌ | [Article](https://data4thought.com/fewshot_learning_nlp.html) | --- |
 | Fine-Tuning Pre-trained Bert | ❌ | --- | [Improving Few-shot Text Classification via Pretrained Language Representations](https://arxiv.org/abs/1908.08788) |
 
-### Pre-trained WordEmbedding and Cosine Similarity
-
-Implementation of [Few-Shot Text Classification with Pre-Trained Word Embeddings and a Human in the Loop](https://arxiv.org/pdf/1804.02063.pdf) by Katherine Bailey and Sunny Chopra Acquia.
-
-This simple approach relies on :
-- computing the mean embedding of each class using a pre-trained word embedding (Word2Vec)
-- for a new example, find the closest class using the cosine distance
-
-We can illustrate it the following way :
-
-![images](Images/nlp_fs_4.png)
-
-The model performance on the test dataset we provide (`datasets` folder) is the following:
-
-![images](Images/perf_1.png)
-
-### Pre-trained WordEmbedding and Classifier
-
-Extension of [Few-Shot Text Classification with Pre-Trained Word Embeddings and a Human in the Loop](https://arxiv.org/pdf/1804.02063.pdf) by Katherine Bailey and Sunny Chopra Acquia.
-
-This approach relies on :
-- apply data augmentation (replace, delete, insert, swap words)
-- computing the different embeddings for each class using a pre-trained word embedding (Word2Vec)
-- fit a classifier (K-NN, Random Forest) on the training samples
-- for a new example, use the trained classifier
-
-The model performance on the test dataset we provide (`ddatasets` folder) is the following:
-
-![images](Images/perf_2.png)
-
 ## Getting started
 
 ### Preparing your data
