@@ -99,8 +99,7 @@ You can also play directly with these notebook examples using [Binder](https://g
 
 | Notebook | Description |
 | --- | --- |
-| [1] FewShot | A simple demonstration of fsTC pre-trained WordEmbeddings classifers |
-| [2] DLFewShot | Extension leveraging Deep-Learning approaches |
+| [1] CosineClassifierDemo | A simple demonstration of fsText Cosine Classifier + Word2Vec |
 
 ## Contributing
 
