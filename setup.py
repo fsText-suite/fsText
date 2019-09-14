@@ -15,7 +15,7 @@ setup(
       author_email = 'mael.fabien@gmail.com',      # Type in your E-Mail
       url = 'https://github.com/maelfabien/fsText',   # Provide either the link to your github or to your website
       long_description=long_description,
-      long_description_content_type='text/markdown'
+      long_description_content_type='text/markdown',
       download_url = 'https://github.com/maelfabien/fsText/archive/v_03.tar.gz',    # I explain this later on
       keywords = ['Few', 'Shot', 'Text', 'Classification'],   # Keywords that define your package best
       install_requires=[
