@@ -3,11 +3,12 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 import gensim.downloader as api
 from scipy import spatial
-from sklearn import preprocessing
 import re
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.ensemble import RandomForestClassifier
+from sklearn import preprocessing
 
-
-class CosineClassifier():
+class process_txt:
 
     def __init__(self):
 
@@ -46,8 +47,8 @@ class CosineClassifier():
     def filter_text(self, raw_text):
 
         """ 
-		Excluding unknown words and get corresponding token
-		"""
+        Excluding unknown words and get corresponding token
+        """
         raw_text = raw_text.split()
 
         return list(filter(lambda x: x in self.model.vocab, raw_text))
@@ -66,12 +67,20 @@ class CosineClassifier():
     def label_encoder(self, y_train):
         return self.le.fit_transform(y_train)
 
+
+class CosineClassifier():
+
+    def __init__(self):
+
+        self.preprocess = process_txt()
+        
+
     def fit(self, X_train, y_train):
 
-        X_train = self.preprocess(X_train)
-        X_train = X_train.apply(lambda x : self.transform_text(x)).values
+        X_train = self.preprocess.preprocess(X_train)
+        X_train = X_train.apply(lambda x : self.preprocess.transform_text(x)).values
 
-        y_train = self.label_encoder(y_train)
+        y_train = self.preprocess.label_encoder(y_train)
 
         self.classes = np.unique(y_train)
 
@@ -89,7 +98,7 @@ class CosineClassifier():
         for cl in self.classes :
 
             dist = spatial.distance.cosine(
-                self.transform_text(txt), self.embedding_fit[cl]
+                self.preprocess.transform_text(txt), self.embedding_fit[cl]
             )
 
             if dist <= best_dist:
@@ -100,8 +109,68 @@ class CosineClassifier():
 
     def predict(self, X_test):
 
-        X_test = self.preprocess(X_test)
+        X_test = self.preprocess.preprocess(X_test)
         y_pred = np.array([self.classify_txt(t) for t in X_test])
-        y_pred = self.le.inverse_transform(y_pred)
+        y_pred = self.preprocess.le.inverse_transform(y_pred)
+
+        return y_pred
+
+class KNNClassifier():
+
+    def __init__(self):
+
+        self.preprocess = process_txt()
+
+    def fit(self, X_train, y_train):
+
+        X_train = self.preprocess.preprocess(X_train)
+        X_train = X_train.apply(lambda x : self.preprocess.transform_text(x)).values
+
+        y_train = self.preprocess.label_encoder(y_train)
+        unique, counts = np.unique(y_train, return_counts=True)
+
+        sample_size=min(counts)
+
+        clf = KNeighborsClassifier(n_neighbors=sample_size, p=2)
+        clf.fit(list(X_train), y_train)
+        self.clf = clf
+
+    def predict(self, X_test):
+
+        X_test = self.preprocess.preprocess(X_test)
+        X_test = [self.preprocess.transform_text(txt) for txt in X_test]
+
+        y_pred = self.clf.predict(X_test)
+        y_pred = self.preprocess.le.inverse_transform(y_pred)
+
+        return y_pred
+
+class RFClassifier():
+
+    def __init__(self):
+
+        self.preprocess = process_txt()
+
+    def fit(self, X_train, y_train):
+
+        X_train = self.preprocess.preprocess(X_train)
+        X_train = X_train.apply(lambda x : self.preprocess.transform_text(x)).values
+
+        y_train = self.preprocess.label_encoder(y_train)
+        unique, counts = np.unique(y_train, return_counts=True)
+
+        sample_size=min(counts)
+
+        clf = RandomForestClassifier(n_estimators=150)
+        clf.fit(list(X_train), y_train)
+        self.clf = clf
+
+    def predict(self, X_test):
+
+        X_test = self.preprocess.preprocess(X_test)
+        X_test = [self.preprocess.transform_text(txt) for txt in X_test]
+
+        y_pred = self.clf.predict(X_test)
+        y_pred = self.preprocess.le.inverse_transform(y_pred)
 
         return y_pred
